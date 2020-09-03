@@ -96,6 +96,13 @@ h6 {
   }
 }
 
+.social-links {
+  display: grid;
+  align-content: center;
+  text-align: center;
+}
+
+/* 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
@@ -838,4 +845,4 @@ h6 {
   .col-lg-offset-0 {
     margin-left: 0%;
   }
-}
+} */
