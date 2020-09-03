@@ -10,7 +10,7 @@ export default function ProjectsSection() {
         <div className="projects-wrapper">
           <div>
             <div className="project">
-              <img className="thumbnail" src="images/dash.jpg" />
+              <img className="thumbnail" src="images/dash.jpg" alt="dash" />
               <div className="project-preview">
                 <h6 className="project-title">Laboratory Management System</h6>
                 <p className="project-intro">
@@ -24,7 +24,11 @@ export default function ProjectsSection() {
 
           <div>
             <div className="project">
-              <img className="thumbnail" src="images/ecom.jpg" />
+              <img
+                className="thumbnail"
+                src="images/ecom.jpg"
+                alt="thumbnail"
+              />
               <div className="project-preview">
                 <h6 className="project-title">
                   Online Store - CoursePost Title
@@ -40,7 +44,11 @@ export default function ProjectsSection() {
 
           <div>
             <div className="project">
-              <img className="thumbnail" src="images/membership site.jpg" />
+              <img
+                className="thumbnail"
+                src="images/membership site.jpg"
+                alt="membership"
+              />
               <div className="project-preview">
                 <h6 className="project-title">Membership Website</h6>
                 <p className="project-intro">

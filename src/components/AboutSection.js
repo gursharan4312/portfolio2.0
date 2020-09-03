@@ -25,7 +25,7 @@ export default function AboutSection() {
 
             <p>
               Fullstack developer with primary focus on Django + React:{" "}
-              <a target="_blank" href="resume.pdf">
+              <a target="_blank" href="resume.pdf" rel="noopener noreferrer">
                 Download Resume
               </a>
             </p>
@@ -50,14 +50,22 @@ export default function AboutSection() {
           </div>
 
           <div className="social-links">
-            <img id="social_img" src="images/follow.jpg" />
+            <img id="social_img" src="images/follow.jpg" alt="folow" />
             <h3>Find me on Twitter &amp; Youtube</h3>
 
-            <a target="_blank" href="https://www.youtube.com/c/dennisivy">
+            <a
+              target="_blank"
+              href="https://www.youtube.com/c/dennisivy"
+              rel="noopener noreferrer"
+            >
               YouTube: @DennisIvy
             </a>
             <br />
-            <a target="_blank" href="https://twitter.com/dennisivy11">
+            <a
+              target="_blank"
+              href="https://twitter.com/dennisivy11"
+              rel="noopener noreferrer"
+            >
               Twitter: @DennisIvy11
             </a>
           </div>
