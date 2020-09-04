@@ -10,13 +10,8 @@ export default function AboutSection() {
             <h4>More about me</h4>
 
             <p>
-              I build new projects just to tickle my brain and love teaching
-              others how they're made.
-            </p>
-
-            <p>
-              While I keep busy teaching courses, I still take interviews in
-              search of a great team &amp; projects that interest me.
+              I like working on differnt projects and technologies. I enjoy
+              creating new stuff which helps me to learn more.
             </p>
 
             <hr />
@@ -24,7 +19,7 @@ export default function AboutSection() {
             <h4>TOP EXPERTISE</h4>
 
             <p>
-              Fullstack developer with primary focus on Django + React:{" "}
+              Fullstack developer with primary focus on Node(Express) + React:{" "}
               <a target="_blank" href="resume.pdf" rel="noopener noreferrer">
                 Download Resume
               </a>
@@ -32,41 +27,41 @@ export default function AboutSection() {
 
             <div className="skills">
               <ul>
-                <li>Python</li>
-                <li>Django</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Postgres</li>
+                <li>JavaScript(ES6)</li>
+                <li>C++(OOP)</li>
+                <li>Java</li>
+                <li>PHP</li>
+                <li>SQL/NoSQL</li>
               </ul>
 
               <ul>
-                <li>Google Maps API</li>
-                <li>JS Charts</li>
-                <li>AWS (RDS/S3)</li>
-                <li>Heroku</li>
-                <li>HTML/CSS</li>
+                <li>React</li>
+                <li>Node(Express/Feathers) </li>
+                <li>MongoDB/MySQL/OracleDB</li>
+                <li>AWS(EC2/S3/Lambda)</li>
+                <li>HTML5/CSS3</li>
               </ul>
             </div>
           </div>
 
           <div className="social-links">
             <img id="social_img" src="images/follow.jpg" alt="folow" />
-            <h3>Find me on Twitter &amp; Youtube</h3>
+            <h3>Find me on other social platforms</h3>
 
             <a
               target="_blank"
-              href="https://www.youtube.com/c/dennisivy"
+              href="https://github.com/gursharan4312"
               rel="noopener noreferrer"
             >
-              YouTube: @DennisIvy
+              Github : gursharan4312
             </a>
             <br />
             <a
               target="_blank"
-              href="https://twitter.com/dennisivy11"
+              href="https://www.linkedin.com/in/gursharan4312/"
               rel="noopener noreferrer"
             >
-              Twitter: @DennisIvy11
+              Linkedin : gursharan4312
             </a>
           </div>
         </div>

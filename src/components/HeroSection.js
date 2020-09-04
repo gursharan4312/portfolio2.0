@@ -11,7 +11,7 @@ export default function HeroSection() {
 
         <div className="intro-wrapper">
           <div className="nav-wrapper">
-            <a href="index.html">
+            <a href="/">
               <div className="dots-wrapper">
                 <div id="dot-1" className="browser-dot"></div>
                 <div id="dot-2" className="browser-dot"></div>
