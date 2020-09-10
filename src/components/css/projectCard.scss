@@ -34,5 +34,13 @@
         text-decoration: underline;
       }
     }
+    span {
+      color: #17a2b8;
+      font-weight: lighter;
+      &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }
+    }
   }
 }

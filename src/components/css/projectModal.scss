@@ -1,0 +1,81 @@
+.project-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.75);
+
+  text-align: center;
+  color: #fff;
+  .modal-container {
+    width: 90%;
+    max-height: calc(100vh - 4rem);
+    margin: 2rem auto;
+    background-color: var(--secondaryColor);
+    border-radius: 5px;
+    overflow-y: scroll;
+    position: relative;
+  }
+  .modal-head {
+    position: fixed;
+    top: 2rem;
+    width: 90%;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid var(--borderColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mainColor);
+    .dots-wrapper {
+      display: flex;
+      padding: 10px;
+      .browser-dot {
+        background-color: black;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin: 5px;
+        line-height: 12px;
+        cursor: pointer;
+
+        -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+      }
+      #dot-1 {
+        background-color: #fc6058;
+        color: #fc6058;
+      }
+
+      #dot-2 {
+        background-color: #fec02f;
+        color: #fec02f;
+      }
+
+      #dot-3 {
+        background-color: #2aca3e;
+        color: #2aca3e;
+      }
+    }
+    &:hover {
+      #dot-1,
+      #dot-2,
+      #dot-3 {
+        color: #fff;
+      }
+    }
+  }
+  .modal-body {
+    padding: 2rem 0;
+  }
+  .modal-footer {
+    position: fixed;
+    bottom: 2rem;
+    width: 90%;
+    height: 30px;
+    border-radius: 0 0 5px 5px;
+    border-top: 1px solid var(--borderColor);
+    background-color: var(--mainColor);
+  }
+}

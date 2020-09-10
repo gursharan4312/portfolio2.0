@@ -1,12 +1,17 @@
 import React from "react";
 import "./css/projectCard.scss";
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, index, openProjectModal }) {
   const { title, description, imgURL, github, live } = project;
   return (
     <div>
       <div className="project">
-        <img className="thumbnail" src={imgURL} alt="thumbnail" />
+        <img
+          className="thumbnail"
+          src={imgURL}
+          alt="thumbnail"
+          onClick={() => openProjectModal(index)}
+        />
         <div className="project-preview">
           <h6 className="project-title">{title}</h6>
           <p className="project-intro">{description}</p>
@@ -14,7 +19,7 @@ export default function ProjectCard({ project }) {
           <br />
           <a href={live}>View live</a>
           <br />
-          <a href="project.html">Read More</a>
+          <span onClick={() => openProjectModal(index)}> Read More</span>
         </div>{" "}
       </div>
     </div>
