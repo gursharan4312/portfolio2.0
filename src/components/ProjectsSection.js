@@ -32,6 +32,7 @@ export default function ProjectsSection() {
         imgURL: "images/utilitywest.JPG",
         github: "#",
         live: "http://utilitywestcivilworks.com/",
+        technologies: ["React", "SASS"],
       },
       {
         title: "Portfolio 1.0",
@@ -39,6 +40,7 @@ export default function ProjectsSection() {
         imgURL: "images/portfolio1.JPG",
         github: "https://github.com/gursharan4312/portfolio_template_react",
         live: "https://portfolio-gursharan.netlify.app/",
+        technologies: ["React", "SASS", "Particle.js"],
       },
       {
         title: "Amazon Clone",
@@ -46,6 +48,7 @@ export default function ProjectsSection() {
         imgURL: "images/amazon-clone.JPG",
         github: "https://github.com/gursharan4312/amazon-clone",
         live: "https://amazon-react.netlify.app/",
+        technologies: ["React", "SASS"],
       },
     ];
     setProjects([...temp]);

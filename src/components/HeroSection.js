@@ -21,7 +21,7 @@ export default function HeroSection() {
 
             <ul id="navigation">
               <li>
-                <a href="index.html#contact">Contact</a>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
