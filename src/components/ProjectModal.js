@@ -3,7 +3,8 @@ import ReactDOM from "react-dom";
 import "./css/projectModal.scss";
 
 export default function ProjectModal({ project, toggleModal }) {
-  const { title, description, imgURL, github, live } = project;
+  const { title, imgURL } = project;
+  // const { title, description, imgURL, github, live } = project;
   return ReactDOM.createPortal(
     <div className="project-modal">
       <div className="modal-container">
