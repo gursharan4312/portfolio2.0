@@ -15,9 +15,13 @@ export default function ProjectCard({ project, index, openProjectModal }) {
         <div className="project-preview">
           <h6 className="project-title">{title}</h6>
           <p className="project-intro">{description}</p>
-          <a href={github}>Github</a>
+          <a href={github} target="_blankl">
+            Github
+          </a>
           <br />
-          <a href={live}>View live</a>
+          <a href={live} target="_blankl">
+            View live
+          </a>
           <br />
           <span onClick={() => openProjectModal(index)}> Read More</span>
         </div>{" "}

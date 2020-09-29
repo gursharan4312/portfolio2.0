@@ -29,17 +29,15 @@ export default function AboutSection() {
               <ul>
                 <li>JavaScript(ES6)</li>
                 <li>C++(OOP)</li>
-                <li>Java</li>
-                <li>PHP</li>
-                <li>SQL/NoSQL</li>
+                <li>AWS(EC2/S3/Lambda)</li>
+                <li>HTML5/CSS3</li>
               </ul>
 
               <ul>
                 <li>React</li>
                 <li>Node(Express/Feathers) </li>
+                <li>SQL/NoSQL</li>
                 <li>MongoDB/MySQL/OracleDB</li>
-                <li>AWS(EC2/S3/Lambda)</li>
-                <li>HTML5/CSS3</li>
               </ul>
             </div>
           </div>

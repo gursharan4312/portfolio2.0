@@ -27,28 +27,25 @@ export default function ProjectsSection() {
   useEffect(() => {
     let temp = [
       {
-        title: "Online Store - CoursePost Title",
-        description:
-          "Online store with paypal payments intergration and guest user shopping",
-        imgURL: "images/ecom.jpg",
+        title: "Utility West Civil Works",
+        description: "Local Construction company located at Delta BC.",
+        imgURL: "images/utilitywest.JPG",
         github: "#",
-        live: "#",
+        live: "http://utilitywestcivilworks.com/",
       },
       {
-        title: "Online Store - CoursePost Title2",
-        description:
-          "Online store with paypal payments intergration and guest user shopping",
-        imgURL: "images/ecom.jpg",
-        github: "#",
-        live: "#",
+        title: "Portfolio 1.0",
+        description: "My first portfolio built using React.js",
+        imgURL: "images/portfolio1.JPG",
+        github: "https://github.com/gursharan4312/portfolio_template_react",
+        live: "https://portfolio-gursharan.netlify.app/",
       },
       {
-        title: "Online Store - CoursePost Title3",
-        description:
-          "Online store with paypal payments intergration and guest user shopping",
-        imgURL: "images/ecom.jpg",
-        github: "#",
-        live: "#",
+        title: "Amazon Clone",
+        description: "Amazon clone build using React",
+        imgURL: "images/amazon-clone.JPG",
+        github: "https://github.com/gursharan4312/amazon-clone",
+        live: "https://amazon-react.netlify.app/",
       },
     ];
     setProjects([...temp]);

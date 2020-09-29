@@ -18,7 +18,7 @@ export default function ProjectModal({ project, toggleModal }) {
         </div>
         <div className="modal-body">
           <h1>{title}</h1>
-          <img src={imgURL} />
+          <img src={imgURL} alt="project-img" />
         </div>
         <div className="modal-footer"></div>
       </div>
