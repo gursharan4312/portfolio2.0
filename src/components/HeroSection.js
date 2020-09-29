@@ -28,11 +28,11 @@ export default function HeroSection() {
 
           <div className="left-column">
             <img id="profile_pic" src="/images/profile.jpg" alt="portfolio" />
-            <h5 style={{ textAlign: "center", lineHeight: "0" }}>
+            {/* <h5 style={{ textAlign: "center", lineHeight: "0" }}>
               Personalize Theme
-            </h5>
+            </h5> */}
 
-            <div id="theme-options-wrapper">
+            {/* <div id="theme-options-wrapper">
               <div
                 data-mode="light"
                 id="light-mode"
@@ -49,13 +49,13 @@ export default function HeroSection() {
                 id="purple-mode"
                 className="theme-dot"
               ></div>
-            </div>
+            </div> */}
 
-            <p id="settings-note">
+            {/* <p id="settings-note">
               *Theme settings will be saved for
               <br />
               your next vist
-            </p>
+            </p> */}
           </div>
 
           <div className="right-column">
@@ -64,7 +64,7 @@ export default function HeroSection() {
                 <div id="corner-tl" className="corner"></div>
                 <div id="corner-tr" className="corner"></div>
                 <h3>What I Do</h3>
-                <p>I am a Full-Stack web Developer who works with MERN stack</p>
+                <p>I design and build wesbites</p>
                 <div id="corner-br" className="corner"></div>
                 <div id="corner-bl" className="corner"></div>
               </div>
