@@ -10,7 +10,7 @@
   color: #fff;
   .modal-container {
     width: 90%;
-    max-height: calc(100vh - 4rem);
+    height: calc(100vh - 4rem);
     margin: 2rem auto;
     background-color: var(--secondaryColor);
     border-radius: 5px;
@@ -67,42 +67,53 @@
     }
   }
   .modal-body {
-    padding: 2rem 0 5rem 0;
     text-align: left;
     width: 90%;
-    margin: auto;
+    margin: 2rem auto 0 auto;
+    height: 100%;
+    display: grid;
+    grid-template-areas: "image description";
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    @media only screen and (max-width: 768px) {
+      grid-template-areas: "image image" "description description";
+    }
     .project-img {
-      width: 80%;
-      margin: auto;
-      img {
-        width: 100%;
+      grid-area: image;
+      width: 100%;
+      h1 {
+        font-size: 2.5rem;
       }
     }
-    .project-desc {
-      color: #000;
-    }
-    .project-technologies {
-      margin: 1rem 0;
-      color: #000;
-      .technology {
-        display: inline-block;
-        padding: 0.5rem 1rem;
-        margin: 0 0.3rem;
-        background: #2aca3e;
-        color: #fff;
-      }
-    }
-    .project-links {
-      .btn {
-        display: inline-block;
-        padding: 1rem 2rem;
-        margin: 0 0.5rem;
+    .project-details {
+      grid-area: description;
+      margin-top: 20%;
+      .project-desc {
         color: #000;
-        border-radius: 5px;
-        border: 2px solid #fec02f;
-        &:hover {
-          background: #fec02f;
+      }
+      .project-technologies {
+        margin: 1rem 0;
+        color: #000;
+        .technology {
+          display: inline-block;
+          padding: 0.5rem 1rem;
+          margin: 0 0.3rem;
+          background: #2aca3e;
           color: #fff;
+        }
+      }
+      .project-links {
+        .btn {
+          display: inline-block;
+          padding: 1rem 2rem;
+          margin: 0 0.5rem;
+          color: #000;
+          border-radius: 5px;
+          border: 2px solid #fec02f;
+          &:hover {
+            background: #fec02f;
+            color: #fff;
+          }
         }
       }
     }

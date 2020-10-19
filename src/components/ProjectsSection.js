@@ -29,6 +29,12 @@ export default function ProjectsSection() {
       {
         title: "Utility West Civil Works",
         description: "Local Construction company located at Delta BC.",
+        images: [
+          {
+            url: "images/utilitywest.JPG",
+            legend: "",
+          },
+        ],
         imgURL: "images/utilitywest.JPG",
         github: "#",
         live: "http://utilitywestcivilworks.com/",
@@ -37,6 +43,12 @@ export default function ProjectsSection() {
       {
         title: "Portfolio 1.0",
         description: "My first portfolio built using React.js",
+        images: [
+          {
+            url: "images/portfolio1.JPG",
+            legend: "Dark theme",
+          },
+        ],
         imgURL: "images/portfolio1.JPG",
         github: "https://github.com/gursharan4312/portfolio_template_react",
         live: "https://portfolio-gursharan.netlify.app/",
@@ -45,6 +57,12 @@ export default function ProjectsSection() {
       {
         title: "Amazon Clone",
         description: "Amazon clone build using React",
+        images: [
+          {
+            url: "images/amazon-clone.JPG",
+            legend: "Dark theme",
+          },
+        ],
         imgURL: "images/amazon-clone.JPG",
         github: "https://github.com/gursharan4312/amazon-clone",
         live: "https://amazon-react.netlify.app/",
