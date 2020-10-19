@@ -1,15 +1,29 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./css/projectModal.scss";
 
 export default function ProjectModal({ project, toggleModal }) {
-  // const { title, imgURL } = project;
+  const modalContainer = useRef(null);
   const { title, description, images, github, live, technologies } = project;
+  useEffect(() => {
+    function handleClickOutside(e) {
+      if (
+        modalContainer.current &&
+        !modalContainer.current.contains(e.target)
+      ) {
+        toggleModal();
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [modalContainer]);
   return ReactDOM.createPortal(
     <div className="project-modal">
-      <div className="modal-container">
+      <div className="modal-container" ref={modalContainer}>
         <div className="modal-head">
           <div className="dots-wrapper" onClick={toggleModal}>
             <div id="dot-1" className="browser-dot">
