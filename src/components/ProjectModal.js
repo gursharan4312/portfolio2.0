@@ -20,7 +20,7 @@ export default function ProjectModal({ project, toggleModal }) {
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [modalContainer]);
+  }, [modalContainer, toggleModal]);
   return ReactDOM.createPortal(
     <div className="project-modal">
       <div className="modal-container" ref={modalContainer}>
