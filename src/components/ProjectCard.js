@@ -2,14 +2,14 @@ import React from "react";
 import "./css/projectCard.scss";
 
 export default function ProjectCard({ project, index, openProjectModal }) {
-  const { title, description, imgURL, github, live } = project;
+  const { title, description, images, github, live } = project;
   return (
     <div>
       <div className="project">
         <img
           className="thumbnail"
-          src={imgURL}
-          alt="thumbnail"
+          src={images[0].url}
+          alt={title}
           onClick={() => openProjectModal(index)}
         />
         <div className="project-preview">

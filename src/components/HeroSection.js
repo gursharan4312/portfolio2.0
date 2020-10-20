@@ -21,6 +21,8 @@ export default function HeroSection() {
 
             <ul id="navigation">
               <li>
+                <a href="#projects">Resume</a>
+                <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
               </li>
             </ul>

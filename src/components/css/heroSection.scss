@@ -37,9 +37,16 @@
 
       #navigation {
         margin: 0;
-        padding: 10px;
+        height: 100%;
         a {
+          padding: 10px;
           color: var(--mainText);
+          margin: 0 10px;
+          display: inline-block;
+          &:hover {
+            color: var(--primaryText);
+            height: 100%;
+          }
         }
         li {
           display: inline-block;
