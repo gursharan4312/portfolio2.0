@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./css/projectsSection.scss";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
