@@ -38,20 +38,17 @@
       #navigation {
         margin: 0;
         height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
         a {
           padding: 10px;
           color: var(--mainText);
-          margin: 0 10px;
           display: inline-block;
           &:hover {
             color: var(--primaryText);
             height: 100%;
           }
-        }
-        li {
-          display: inline-block;
-          margin-right: 5px;
-          margin-left: 5px;
         }
       }
       .dots-wrapper {
