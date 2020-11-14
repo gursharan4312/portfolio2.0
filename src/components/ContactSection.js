@@ -49,7 +49,7 @@ export default function ContactSection() {
           }}
         >
           {(props) => (
-            <Form id="contact-form">
+            <Form id="contact-form" name="contact">
               <label>Name</label>
               <Field name="name" type="text" className="input-field" required />
               <label>Subject</label>
