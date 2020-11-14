@@ -22,27 +22,30 @@ export default function ContactSection() {
           onSubmit={(values, actions) => {
             setIsSubmitting(true);
 
-            // let formData = new FormData();
-            // Object.keys(values).map((key) => formData.append(key, values[key]));
-
             fetch("/", {
               method: "POST",
               headers: { "Content-Type": "application/x-www-form-urlencoded" },
               body: encode({ "form-name": "contact", values }),
-            }).then((res) => {
-              console.log(res);
-              setIsSubmitting(false);
-              actions.resetForm();
-              if (res.status === 200) {
-                setFormResponse(
-                  "<span class='success' >Message Submitted</span>"
-                );
-              } else {
+            })
+              .then((res) => {
+                setIsSubmitting(false);
+                actions.resetForm();
+
+                if (res.status === 200) {
+                  setFormResponse(
+                    "<span class='success' >Message Submitted</span>"
+                  );
+                } else {
+                  setFormResponse(
+                    "<span class='error' >Something went wrong</span>"
+                  );
+                }
+              })
+              .catch((e) =>
                 setFormResponse(
                   "<span class='error' >Something went wrong</span>"
-                );
-              }
-            });
+                )
+              );
           }}
         >
           {(props) => (
