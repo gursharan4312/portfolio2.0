@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./css/contactSection.scss";
 
-import { Formik, Field, Form } from "formik";
-
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formResponse, setFormResponse] = useState("");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
+  const [message, setMessage] = useState("");
   const encode = (data) => {
     return Object.keys(data)
       .map(
@@ -13,67 +15,81 @@ export default function ContactSection() {
       )
       .join("&");
   };
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    let formdata = { name, email, subject, message };
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", formdata }),
+    })
+      .then((res) => {
+        setIsSubmitting(false);
+
+        if (res.status === 200) {
+          setFormResponse("<span class='success' >Message Submitted</span>");
+        } else {
+          setFormResponse("<span class='error' >Something went wrong</span>");
+        }
+      })
+      .catch((e) =>
+        setFormResponse("<span class='error' >Something went wrong</span>")
+      );
+  };
   return (
     <div className="contact-section" id="contact">
       <div className="container">
         <h3 style={{ textAlign: "center" }}>Get In Touch</h3>
-        <Formik
-          initialValues={{ name: "", subject: "", email: "", message: "" }}
-          onSubmit={(values, actions) => {
-            setIsSubmitting(true);
-
-            fetch("/", {
-              method: "POST",
-              headers: { "Content-Type": "application/x-www-form-urlencoded" },
-              body: encode({ "form-name": "contact", values }),
-            })
-              .then((res) => {
-                setIsSubmitting(false);
-                actions.resetForm();
-
-                if (res.status === 200) {
-                  setFormResponse(
-                    "<span class='success' >Message Submitted</span>"
-                  );
-                } else {
-                  setFormResponse(
-                    "<span class='error' >Something went wrong</span>"
-                  );
-                }
-              })
-              .catch((e) =>
-                setFormResponse(
-                  "<span class='error' >Something went wrong</span>"
-                )
-              );
-          }}
-        >
-          {(props) => (
-            <Form id="contact-form" name="contact">
-              <label>Name</label>
-              <Field name="name" type="text" className="input-field" required />
-              <label>Subject</label>
-              <Field name="subject" type="text" className="input-field" />
-              <label>Email</label>
-              <Field
-                name="email"
-                type="email"
-                className="input-field"
-                required
-              />
-              <label>Message</label>
-              <Field name="message" as="textarea" className="input-field" />
-              <input id="submit-btn" type="submit" value="Send" />
-              {isSubmitting && <div className="loader" />}
-              {formResponse && (
-                <div
-                  className="form-response"
-                  dangerouslySetInnerHTML={{ __html: formResponse }}
-                />
-              )}
-            </Form>
+        <form name="contact" id="contact-form" onSubmit={handleSubmit}>
+          <label>
+            Name:
+            <input
+              name="name"
+              value={name}
+              className="input-field"
+              onChange={(e) => setName(e.target.value)}
+            />
+          </label>
+          <label>
+            Email:
+            <input
+              name="email"
+              type="email"
+              value={email}
+              className="input-field"
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </label>
+          <label>
+            Subject:
+            <input
+              name="subject"
+              value={subject}
+              className="input-field"
+              onChange={(e) => setSubject(e.target.value)}
+            />
+          </label>
+          <label>
+            Message:
+            <textarea
+              name="message"
+              value={message}
+              className="input-field"
+              onChange={(e) => setMessage(e.target.value)}
+            />
+          </label>
+          <input id="submit-btn" type="submit" value="Send" />
+          {isSubmitting && <div className="loader" />}
+          {formResponse && (
+            <div
+              className="form-response"
+              dangerouslySetInnerHTML={{ __html: formResponse }}
+            />
           )}
-        </Formik>
+        </form>
       </div>
     </div>
   );
