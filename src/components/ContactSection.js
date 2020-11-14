@@ -6,6 +6,13 @@ import { Formik, Field, Form } from "formik";
 export default function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formResponse, setFormResponse] = useState("");
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
   return (
     <div className="contact-section" id="contact">
       <div className="container">
@@ -14,12 +21,16 @@ export default function ContactSection() {
           initialValues={{ name: "", subject: "", email: "", message: "" }}
           onSubmit={(values, actions) => {
             setIsSubmitting(true);
-            let formData = new FormData();
-            Object.keys(values).map((key) => formData.append(key, values[key]));
-            fetch("https://www.formbackend.com/f/634bf4794ffaedf5", {
+
+            // let formData = new FormData();
+            // Object.keys(values).map((key) => formData.append(key, values[key]));
+
+            fetch("/", {
               method: "POST",
-              body: formData,
+              headers: { "Content-Type": "application/x-www-form-urlencoded" },
+              body: encode({ "form-name": "contact", values }),
             }).then((res) => {
+              console.log(res);
               setIsSubmitting(false);
               actions.resetForm();
               if (res.status === 200) {
@@ -35,7 +46,11 @@ export default function ContactSection() {
           }}
         >
           {(props) => (
-            <Form id="contact-form">
+            <Form
+              id="contact-form"
+              data-netlify="true"
+              data-netlify-honeypot="bot-field"
+            >
               <label>Name</label>
               <Field name="name" type="text" className="input-field" required />
               <label>Subject</label>
