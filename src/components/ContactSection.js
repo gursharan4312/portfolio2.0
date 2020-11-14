@@ -46,11 +46,7 @@ export default function ContactSection() {
           }}
         >
           {(props) => (
-            <Form
-              id="contact-form"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-            >
+            <Form id="contact-form">
               <label>Name</label>
               <Field name="name" type="text" className="input-field" required />
               <label>Subject</label>
