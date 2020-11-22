@@ -15,6 +15,9 @@ export default function ProjectCard({ project, index }) {
         <div className="project-preview">
           <h6 className="project-title">{title}</h6>
           <p className="project-intro">{description}</p>
+          {whatIlearnt && (
+            <h5 style={{ margin: 0, padding: 0 }}>What did I learn?</h5>
+          )}
           <ul>
             {whatIlearnt &&
               whatIlearnt.map((item, i) => <li key={i}>{item}</li>)}
