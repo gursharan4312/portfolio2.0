@@ -29,9 +29,16 @@
       color: var(--secondaryText);
       font-size: 14px;
     }
-    a {
-      &:hover {
-        text-decoration: underline;
+    .button-wrapper {
+      display: flex;
+      justify-content: space-between;
+      a {
+        background-color: var(--buttonColor);
+        color: var(--mainColor);
+        display: inline-block;
+        padding: 0.5em 1em;
+        border-radius: 5px;
+        box-shadow: -2px 7px 21px -9px rgba(0, 0, 0, 0.75);
       }
     }
     span {

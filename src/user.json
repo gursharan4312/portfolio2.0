@@ -2,7 +2,7 @@
     "name":"Gursharan Singh",
     "imageUrl":"/images/profile.jpg",
     "whatIdo":"I design and build wesbites",
-    "aboutMe":"I am a web Developer from vancouver, BC. I enjoy building everything from small business to rich intractive web apps. I enjoy creating new stuff which helps me to learn more.",
+    "aboutMe":"I always had passion for coding. I started coding around 3 years ago and ever science I have leant many things. I enjoy doing both frontend and backend of a website.Recently I'm more focused on MERN stack and created some awsome projects with it.",
     "topExperties":"Fullstack developer with primary focus on Node(Express) + React",
     "skills":["JavaScript(ES6)","C++","AWS(EC2/S3/Lambda)","HTML5/CSS3","React","Node(Express/Feathers)","SQL/NoSQL","MongoDB/MySQL/OracleDB"],
     "socialLinks":[
@@ -17,8 +17,8 @@
     "projects":[
         {
           "title": "ProShop Ecomm App",
-          "description":
-            "Full Stack ecomm app built using MERN(MongoDB, Express, React, Node) Stack",
+          "description":"Full stack ecommerce website built using MERN stack.",
+          "whatIlearnt":["Using Redux store with react to manage global state","Using Express and Node to create CRUD functionality","Making Admin dashboard to update products/users/orders"],
           "images": [
             {
               "url": "images/proshop1.PNG",
@@ -48,6 +48,8 @@
         {
           "title": "Utility West Civil Works",
           "description": "Local Construction company located at Delta BC.",
+          "whatIlearnt":["Using Gatsby as a react framework to create static site","Using Wordpress as serverless backend"],
+         
           "images": [
             {
               "url": "images/utilitywest.JPG",
@@ -61,6 +63,7 @@
         {
           "title": "Portfolio 1.0",
           "description": "My first portfolio built using React.js",
+          "whatIlearnt":["Creating a awsome userinterface using React","Using npm libraries to perform different tasks"],
           "images": [
             {
               "url": "images/portfolio1.JPG",
@@ -74,19 +77,6 @@
           "github": "https://github.com/gursharan4312/portfolio_template_react",
           "live": "https://portfolio-gursharan.netlify.app/",
           "technologies": ["React", "SASS", "Particle.js"]
-        },
-        {
-          "title": "Amazon Clone",
-          "description": "Amazon clone build using React",
-          "images": [
-            {
-              "url": "images/amazon-clone.JPG",
-              "legend": "Dark theme"
-            }
-          ],
-          "github": "https://github.com/gursharan4312/amazon-clone",
-          "live": "https://amazon-react.netlify.app/",
-          "technologies": ["React", "SASS"]
         }
       ]
 }

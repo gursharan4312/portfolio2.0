@@ -1,8 +1,8 @@
 import React from "react";
 import "./css/projectCard.scss";
 
-export default function ProjectCard({ project, index, openProjectModal }) {
-  const { title, description, images, github, live } = project;
+export default function ProjectCard({ project, index }) {
+  const { title, description, whatIlearnt, images, github, live } = project;
   return (
     <div>
       <div className="project">
@@ -10,20 +10,28 @@ export default function ProjectCard({ project, index, openProjectModal }) {
           className="thumbnail"
           src={images[0].url}
           alt={title}
-          onClick={() => openProjectModal(index)}
+          // onClick={() => openProjectModal(index)}
         />
         <div className="project-preview">
           <h6 className="project-title">{title}</h6>
           <p className="project-intro">{description}</p>
-          <a href={github} target="_blankl">
-            Github
-          </a>
-          <br />
-          <a href={live} target="_blankl">
-            View live
-          </a>
-          <br />
-          <span onClick={() => openProjectModal(index)}> Read More</span>
+          <ul>
+            {whatIlearnt &&
+              whatIlearnt.map((item, i) => <li key={i}>{item}</li>)}
+          </ul>
+          <div className="button-wrapper">
+            {github !== "#" && (
+              <a href={github} target="_blankl">
+                Github
+              </a>
+            )}
+
+            <a href={live} target="_blankl">
+              View live
+            </a>
+          </div>
+
+          {/* <span onClick={() => openProjectModal(index)}> Read More</span> */}
         </div>{" "}
       </div>
     </div>
