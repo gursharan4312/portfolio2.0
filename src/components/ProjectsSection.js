@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./css/projectsSection.scss";
 import ProjectCard from "./ProjectCard";
 // import ProjectModal from "./ProjectModal";
@@ -6,7 +6,7 @@ import { projects } from "../user.json";
 
 export default function ProjectsSection() {
   // const [openModal, setOpenModal] = useState(false);
-  const [selectedProject, setSelectedProject] = useState(0);
+  // const [selectedProject, setSelectedProject] = useState(0);
 
   // const toggleModal = () => {
   //   setOpenModal(!openModal);
