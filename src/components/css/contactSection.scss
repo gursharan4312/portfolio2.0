@@ -40,12 +40,13 @@
 }
 
 .loader {
+  display: block;
   margin: 10px auto;
   border: 6px solid #f3f3f3; /* Light grey */
   border-top: 6px solid #3498db; /* Blue */
   border-radius: 50%;
-  width: 25px;
-  height: 25px;
+  width: 2em;
+  height: 2em;
   animation: spin 2s linear infinite;
 }
 
@@ -60,10 +61,13 @@
 .form-response {
   height: 25px;
   margin: 10px 0;
-  .success {
-    color: #2aca3e;
+  text-align: center;
+  color: #fff;
+  line-height: 1.5em;
+  &.success {
+    background-color: #28a745;
   }
-  .error {
-    color: #fc6058;
+  &.error {
+    background-color: #dc3545;
   }
 }
