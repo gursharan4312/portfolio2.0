@@ -46,6 +46,28 @@
           "technologies": ["Node.js", "Express", "MongoDb", "React", "SASS"]
         },
         {
+          "title": "Shehr Vancouver ",
+          "description":"React Web App with AWS lambda functions as backend",
+          "whatIlearnt":["Using AWS Lambda functions","Using Lambda functions with MongoDb to save content","Creating custom components for Netlify CMS"],
+          "images": [
+            {
+              "url": "images/shehrvancouver1.PNG",
+              "legend": "Home page"
+            },
+            {
+              "url": "images/shehrvancouver2.PNG",
+              "legend": "Add Confession"
+            },
+            {
+              "url": "images/shehrvancouver3.PNG",
+              "legend": "Jobs Section"
+            }
+          ],
+          "github": "https://github.com/gursharan4312/proshop",
+          "live": "http://proshop.gursharansingh.ca/",
+          "technologies": ["Node.js", "Express", "MongoDb", "React", "SASS"]
+        },
+        {
           "title": "Utility West Civil Works",
           "description": "Local Construction company located at Delta BC.",
           "whatIlearnt":["Using Gatsby as a react framework to create static site","Using Wordpress as serverless backend"],
