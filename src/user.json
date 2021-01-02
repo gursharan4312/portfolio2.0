@@ -42,7 +42,7 @@
             }
           ],
           "github": "https://github.com/gursharan4312/proshop",
-          "live": "https://proecomm.herokuapp.com/",
+          "live": "http://proshop.gursharansingh.ca/",
           "technologies": ["Node.js", "Express", "MongoDb", "React", "SASS"]
         },
         {
