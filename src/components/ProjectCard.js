@@ -22,7 +22,7 @@ export default function ProjectCard({ project, index, openProjectModal }) {
             whatIlearnt.map((item, i) =>
               i < 3 ? (
                 <li key={i}>{item}</li>
-              ) : i == 3 ? (
+              ) : i === 3 ? (
                 <strong>. . . . .</strong>
               ) : (
                 ""
