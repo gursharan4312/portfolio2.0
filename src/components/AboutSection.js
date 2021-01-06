@@ -18,14 +18,8 @@ export default function AboutSection() {
                 Download Resume
               </a>
             </p>
-            <div className="skills">
-              <ul>
-                {skills.map((skill, i) => (
-                  <li key={i}>{skill}</li>
-                ))}
-              </ul>
-            </div>
           </div>
+
           {socialLinks && (
             <>
               <div className="social-links">
@@ -43,6 +37,14 @@ export default function AboutSection() {
               </div>
             </>
           )}
+        </div>
+        <div className="skills">
+          <h3>Programming Skills</h3>
+          <ul>
+            {skills.map((skill, i) => (
+              <li key={i}>{skill}</li>
+            ))}
+          </ul>
         </div>
       </div>
     </div>

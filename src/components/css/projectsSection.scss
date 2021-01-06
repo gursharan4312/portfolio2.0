@@ -5,6 +5,7 @@
   .projects-wrapper {
     display: grid;
     grid-template-columns: repeat(auto-fit, 320px);
+    grid-auto-rows: 1fr;
     gap: 20px;
     justify-content: center;
     padding-bottom: 50px;

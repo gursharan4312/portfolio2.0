@@ -2,9 +2,9 @@
     "name":"Gursharan Singh",
     "imageUrl":"/images/profile.jpg",
     "whatIdo":"I design and build wesbites",
-    "aboutMe":"I always had passion for coding. I started coding around 3 years ago and ever science I have leant many things. I enjoy doing both frontend and backend of a website.Recently I'm more focused on MERN stack and created some awsome projects with it.",
+    "aboutMe":"I always had passion for coding. I enjoy doing both frontend and backend of a website.I am always looking for opportunities to push my boundaries and build new and exciting things.Recently I'm more focused on MERN stack and created some awsome projects with it.",
     "topExperties":"Fullstack developer with primary focus on Node(Express) + React",
-    "skills":["JavaScript(ES6)","C++","AWS(EC2/S3/Lambda)","HTML5/CSS3","React","Node(Express/Feathers)","SQL/NoSQL","MongoDB/MySQL/OracleDB"],
+    "skills":["JavaScript(ES6)","Java","React","Redux","Node","AWS(EC2/S3/Lambda)","HTML5/CSS3","SQL(MySQL)","MongoDB","Nginx","Docker","Git","WebAPI","and more..."],
     "socialLinks":[
         {
             "name":"Github : gursharan4312",
