@@ -15,11 +15,11 @@ collections:
         fields:
           - name: projects
             label: projects
-            label_singular: Image
+            label_singular: project
             widget: list
             collapsed: true
             fields:
-              - { label: "Project name", name: "projectName", widget: "text" }
+              - { label: "Project name", name: "projectName", widget: "String" }
               - {
                   label: "Project description",
                   name: "projectDescription",
@@ -29,7 +29,7 @@ collections:
                   label: "What Did I Learn",
                   name: "whatDidILearn",
                   widget: list,
-                  feild: { label: "Item", name: "item", widget: "text" },
+                  field: { label: "List Item", name: "item", widget: "text" },
                 }
               - {
                   label: "Project Images",
