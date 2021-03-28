@@ -19,7 +19,7 @@ collections:
             widget: list
             collapsed: true
             fields:
-              - { label: "Project name", name: "projectName", widget: "String" }
+              - { label: "Project name", name: "projectName", widget: "string" }
               - {
                   label: "Project description",
                   name: "projectDescription",
