@@ -1,0 +1,27 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: "public/assests/images"
+public_folder: "/assests/images"
+
+collections:
+  - label: "Site Data"
+    name: "site data"
+    files:
+      - label: "Portfolio"
+        name: "Portfolio"
+        file: "public/admin/data/portfolio.json"
+        fields:
+          - name: Images
+            label: Images
+            label_singular: Image
+            widget: list
+            collapsed: true
+            field:
+              {
+                label: "Project Image",
+                name: "projectImage",
+                widget: list,
+                field: { label: "Image", name: "image", widget: "image" },
+              }
