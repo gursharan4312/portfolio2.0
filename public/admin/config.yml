@@ -9,19 +9,31 @@ collections:
   - label: "Site Data"
     name: "site data"
     files:
-      - label: "Portfolio"
-        name: "Portfolio"
+      - label: "Projects"
+        name: "projects"
         file: "public/admin/data/portfolio.json"
         fields:
-          - name: Images
-            label: Images
+          - name: projects
+            label: projects
             label_singular: Image
             widget: list
             collapsed: true
-            field:
-              {
-                label: "Project Image",
-                name: "projectImage",
-                widget: list,
-                field: { label: "Image", name: "image", widget: "image" },
-              }
+            fields:
+              - { label: "Project name", name: "projectName", widget: "text" }
+              - {
+                  label: "Project description",
+                  name: "projectDescription",
+                  widget: "text",
+                }
+              - {
+                  label: "What Did I Learn",
+                  name: "whatDidILearn",
+                  widget: list,
+                  feild: { label: "Item", name: "item", widget: "text" },
+                }
+              - {
+                  label: "Project Images",
+                  name: "projectImage",
+                  widget: list,
+                  field: { label: "Image", name: "image", widget: "image" },
+                }
