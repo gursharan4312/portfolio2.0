@@ -24,6 +24,31 @@
       ],
       "github": "https://github.com/gursharan4312/proshop",
       "live": "https://proshop.gursharansingh.ca/"
+    },
+    {
+      "projectName": "Real Estate Company",
+      "projectDescription": "A Homes listing web app for real estate company built using React",
+      "github": "https://github.com/gursharan4312/realEstateAgency",
+      "live": "https://realestate.gursharansingh.ca/",
+      "technologies": [
+        "React",
+        "Styled-components",
+        "NodeJs (Express)",
+        "MongoDb"
+      ],
+      "whatDidILearn": [
+        "Using Google Map API to list items in map",
+        "Using Google Geolocation API to fill addresses",
+        "Using Styled components for css in js and creating dark/light theme toggler"
+      ],
+      "projectImage": [
+        "/assests/images/realestate1.png",
+        "/assests/images/realestate2.png",
+        "/assests/images/realestate3.png",
+        "/assests/images/realestate4.png",
+        "/assests/images/realestate5.png"
+      ],
+      "body": "No details yet"
     }
   ]
 }
