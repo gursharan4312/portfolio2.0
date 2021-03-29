@@ -26,6 +26,23 @@ collections:
                   widget: "string",
                 }
               - {
+                  label: "Project Github link",
+                  name: "github",
+                  widget: "string",
+                }
+              - { label: "Project Live link", name: "live", widget: "string" }
+              - {
+                  label: "Technologies used",
+                  name: "technologies",
+                  widget: list,
+                  field:
+                    {
+                      label: "Technology Name",
+                      name: "technology",
+                      widget: "string",
+                    },
+                }
+              - {
                   label: "What Did I Learn",
                   name: "whatDidILearn",
                   widget: list,

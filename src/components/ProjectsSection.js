@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./css/projectsSection.scss";
 import ProjectCard from "./ProjectCard";
 import ProjectModal from "./ProjectModal";
-import { projects } from "../user.json";
+import axios from "axios";
 
 export default function ProjectsSection() {
+  const [projects, setProjects] = useState([]);
   const [openModal, setOpenModal] = useState(false);
   const [selectedProject, setSelectedProject] = useState(0);
 
@@ -15,6 +16,12 @@ export default function ProjectsSection() {
     setSelectedProject(i);
     setOpenModal(true);
   };
+
+  useEffect(() => {
+    axios.get("/admin/data/portfolio.json").then(({ data }) => {
+      setProjects([...data.projects]);
+    });
+  }, []);
 
   return (
     <div className="projects-section" id="projects">
@@ -30,7 +37,7 @@ export default function ProjectsSection() {
             />
           ))}
         </div>
-        {openModal && (
+        {openModal && projects && (
           <ProjectModal
             project={projects[selectedProject]}
             toggleModal={toggleModal}

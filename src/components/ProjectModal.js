@@ -6,7 +6,14 @@ import "./css/projectModal.scss";
 
 export default function ProjectModal({ project, toggleModal }) {
   const modalContainer = useRef(null);
-  const { title, description, images, github, live, technologies } = project;
+  const {
+    projectName,
+    projectDescription,
+    projectImage,
+    github,
+    live,
+    technologies,
+  } = project;
   useEffect(() => {
     function handleClickOutside(e) {
       if (
@@ -35,20 +42,20 @@ export default function ProjectModal({ project, toggleModal }) {
         </div>
         <div className="modal-body">
           <div className="project-img">
-            <h1>{title}</h1>
+            <h1>{projectName}</h1>
             <div>
               <Carousel>
-                {images.map((image, i) => (
+                {projectImage.map((image, i) => (
                   <div key={i}>
-                    <img src={image.url} alt={image.title} />
-                    {image.legend && <p className="legend">{image.legend}</p>}
+                    <img src={image} alt={projectName} />
+                    {/* {image.legend && <p className="legend">{image.legend}</p>} */}
                   </div>
                 ))}
               </Carousel>
             </div>
           </div>
           <div className="project-details">
-            <p className="project-desc">{description}</p>
+            <p className="project-desc">{projectDescription}</p>
             <div className="project-technologies">
               Technologies used:
               {technologies.map((tech, i) => (
