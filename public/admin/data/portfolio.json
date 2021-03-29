@@ -15,7 +15,15 @@
         "/assests/images/proecomm4.png",
         "/assests/images/proecomm5.png"
       ],
-      "body": "# **Pro Ecomm App**"
+      "body": "# **Pro Ecomm App**",
+      "technologies": [
+        "NodeJs (Express)",
+        "React",
+        "MongoDb",
+        "SaSS"
+      ],
+      "github": "https://github.com/gursharan4312/proshop",
+      "live": "https://proshop.gursharansingh.ca/"
     }
   ]
 }
