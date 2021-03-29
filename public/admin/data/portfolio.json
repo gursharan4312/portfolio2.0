@@ -1,0 +1,21 @@
+{
+  "projects": [
+    {
+      "projectName": "Proshop Ecomm App",
+      "projectDescription": "Full stack ecomm app built using MERN stack",
+      "whatDidILearn": [
+        "Using Redux store with react to manage global state",
+        "Using Express and Node to create CRUD functionality",
+        "Making Admin dashboard to update products/users/orders"
+      ],
+      "projectImage": [
+        "/assests/images/proecomm1.png",
+        "/assests/images/proecomm2.png",
+        "/assests/images/proecomm3.png",
+        "/assests/images/proecomm4.png",
+        "/assests/images/proecomm5.png"
+      ],
+      "body": "# **Pro Ecomm App**"
+    }
+  ]
+}
