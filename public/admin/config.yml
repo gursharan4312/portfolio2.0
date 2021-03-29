@@ -23,17 +23,22 @@ collections:
               - {
                   label: "Project description",
                   name: "projectDescription",
-                  widget: "text",
+                  widget: "string",
                 }
               - {
                   label: "What Did I Learn",
                   name: "whatDidILearn",
                   widget: list,
-                  field: { label: "List Item", name: "item", widget: "text" },
+                  field: { label: "List Item", name: "item", widget: "string" },
                 }
               - {
                   label: "Project Images",
                   name: "projectImage",
                   widget: list,
                   field: { label: "Image", name: "image", widget: "image" },
+                }
+              - {
+                  label: "Project Full Details",
+                  name: "body",
+                  widget: "markdown",
                 }
