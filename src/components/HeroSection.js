@@ -1,13 +1,12 @@
 import React from "react";
 import "./css/heroSection.scss";
-import { name, imageUrl, whatIdo } from "../user.json";
 
 export default function HeroSection() {
   return (
     <div className="hero">
       <div className="container">
         <div className="greeting-wrapper">
-          <h1>Hi, I'm {name}</h1>
+          <h1>Hi, I'm Gursharan Singh</h1>
         </div>
 
         <div className="intro-wrapper">
@@ -34,35 +33,11 @@ export default function HeroSection() {
           </div>
 
           <div className="left-column">
-            <img id="profile_pic" src={imageUrl} alt={name} />
-            {/* <h5 style={{ textAlign: "center", lineHeight: "0" }}>
-              Personalize Theme
-            </h5> */}
-
-            {/* <div id="theme-options-wrapper">
-              <div
-                data-mode="light"
-                id="light-mode"
-                className="theme-dot"
-              ></div>
-              <div data-mode="blue" id="blue-mode" className="theme-dot"></div>
-              <div
-                data-mode="green"
-                id="green-mode"
-                className="theme-dot"
-              ></div>
-              <div
-                data-mode="purple"
-                id="purple-mode"
-                className="theme-dot"
-              ></div>
-            </div> */}
-
-            {/* <p id="settings-note">
-              *Theme settings will be saved for
-              <br />
-              your next vist
-            </p> */}
+            <img
+              id="profile_pic"
+              src="/images/profile.jpg"
+              alt="Gursharan Singh"
+            />
           </div>
 
           <div className="right-column">
@@ -71,7 +46,7 @@ export default function HeroSection() {
                 <div id="corner-tl" className="corner"></div>
                 <div id="corner-tr" className="corner"></div>
                 <h3>What I Do</h3>
-                <p>{whatIdo}</p>
+                <p>I design and build wesbites</p>
                 <div id="corner-br" className="corner"></div>
                 <div id="corner-bl" className="corner"></div>
               </div>
