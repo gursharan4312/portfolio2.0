@@ -1,6 +1,7 @@
 :root {
   --mainBackground: #fff;
   --secondaryBackground: #eaeaea;
+  --tertiaryBackground: #f0ead6;
 
   --mainColor: #eaeaea;
   --secondaryColor: #fff;
@@ -12,10 +13,11 @@
 
   --themeDotBorder: #24292e;
 
-  --previewBg: rgb(251, 249, 243, 0.8);
+  --previewBg: #fbf9f3cc;
   --previewShadow: #f0ead6;
 
   --buttonColor: black;
+  --buttonText: #fff;
 }
 
 html,
@@ -28,6 +30,22 @@ body {
 body * {
   transition: 0.3s;
   box-sizing: border-box;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: #434343;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsl(0deg 0% 100% / 25%),
+    inset -2px -2px 2px rgb(0 0 0 / 25%);
+}
+
+html::-webkit-scrollbar-track {
+  background: linear-gradient(90deg, #434343, #434343 1px, #111 0, #111);
+}
+
+html::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
 }
 
 h1,

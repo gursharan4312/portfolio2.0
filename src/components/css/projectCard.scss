@@ -24,7 +24,7 @@
   }
   .project-preview {
     flex: 1;
-    background-color: #fff;
+    background-color: var(--mainBackground);
     padding: 15px;
     display: flex;
     flex-direction: column;
@@ -49,7 +49,7 @@
       justify-content: space-between;
       a {
         background-color: var(--buttonColor);
-        color: var(--mainColor);
+        color: var(--buttonText);
         display: inline-block;
         padding: 0.5em 1em;
         border-radius: 5px;

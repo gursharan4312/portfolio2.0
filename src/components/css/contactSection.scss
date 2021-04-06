@@ -1,5 +1,5 @@
 .contact-section {
-  background-color: var(--secondaryColor);
+  background-color: var(--mainBackground);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
   #contact-form {
@@ -9,7 +9,7 @@
     border: 1px solid var(--borderColor);
     padding: 15px;
     border-radius: 10px;
-    background-color: var(--mainColor);
+    background-color: var(--secondaryBackground);
     margin-bottom: 50px;
     label {
       line-height: 2.7em;
@@ -22,7 +22,7 @@
       width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;
-      background-color: var(--secondaryColor);
+      background-color: var(--mainBackground);
       border-radius: 5px;
       border: 1px solid var(--borderColor);
       font-size: 14px;
@@ -32,7 +32,7 @@
       width: 100%;
       padding-top: 10px;
       padding-bottom: 10px;
-      color: #fff;
+      color: var(--buttonText);
       background-color: var(--buttonColor);
       border: none;
       border-radius: 5px;

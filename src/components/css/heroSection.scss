@@ -1,5 +1,5 @@
 .hero {
-  background-color: var(--mainColor);
+  background-color: var(--secondaryBackground);
   border-bottom: 1px solid var(--borderColor);
   overflow: auto;
   .greeting-wrapper {
@@ -7,7 +7,7 @@
     min-height: 10em;
   }
   .intro-wrapper {
-    background-color: var(--secondaryColor);
+    background-color: var(--mainBackground);
     border: 1px solid var(--borderColor);
     border-radius: 5px 5px 0 0;
 
@@ -33,7 +33,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background-color: var(--mainColor);
+      background-color: var(--secondaryBackground);
 
       #navigation {
         margin: 0;
@@ -99,41 +99,42 @@
         object-fit: cover;
         border: 2px solid var(--borderColor);
       }
-      #theme-options-wrapper {
-        display: flex;
-        justify-content: center;
-        .theme-dot {
-          height: 30px;
-          width: 30px;
-          background-color: black;
-          border-radius: 50%;
+      h4 {
+        margin: 1rem 0;
+      }
+      .theme-options-wrapper {
+        // display: flex;
+        // justify-content: center;
+        color: var(--mainText);
+        .theme-option {
+          display: flex;
+          justify-content: center;
+          align-items: center;
 
-          margin: 5px;
-          border: 2px solid var(--themeDotBorder);
+          .theme-dot {
+            height: 30px;
+            width: 30px;
+            display: inline-block;
+            border-radius: 50%;
 
-          -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-          -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
-          box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+            margin: 5px;
+            border: 2px solid var(--themeDotBorder);
 
-          cursor: pointer;
-          &:hover {
-            border-width: 5px;
-          }
+            -webkit-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
+            box-shadow: -1px 1px 3px -1px rgba(0, 0, 0, 0.75);
 
-          #light-mode {
-            background-color: #fff;
-          }
+            cursor: pointer;
+            &:hover {
+              border-width: 5px;
+            }
 
-          #blue-mode {
-            background-color: #192734;
-          }
-
-          #green-mode {
-            background-color: #78866b;
-          }
-
-          #purple-mode {
-            background-color: #7e4c74;
+            &#light-mode {
+              background-color: #fff;
+            }
+            &#dark-mode {
+              background-color: #1e1e1e;
+            }
           }
         }
       }
@@ -152,7 +153,7 @@
       padding-bottom: 50px;
 
       #preview-shadow {
-        background-color: var(--previewShadow);
+        background-color: var(--tertiaryBackground);
         max-width: 300px;
         height: 180px;
         padding-left: 30px;

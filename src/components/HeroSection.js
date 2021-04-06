@@ -2,6 +2,38 @@ import React from "react";
 import "./css/heroSection.scss";
 
 export default function HeroSection() {
+  const changeThemeToDark = () => {
+    var r = document.querySelector(":root");
+    r.style.setProperty("--mainBackground", "#111");
+    r.style.setProperty("--secondaryBackground", "#1e1e1e");
+    r.style.setProperty("--tertiaryBackground", "#fcca57");
+    r.style.setProperty("--mainColor", "#eaeaea");
+    r.style.setProperty("--secondaryColor", "#fff");
+    r.style.setProperty("--borderColor", "#c1c1c1");
+    r.style.setProperty("--mainText", "#f1f1f1");
+    r.style.setProperty("--secondaryText", "#ddd");
+    r.style.setProperty("--themeDotBorder", "#24292e");
+    r.style.setProperty("--previewBg", "#1f1a10");
+    r.style.setProperty("--previewShadow", "#f0ead6");
+    r.style.setProperty("--buttonColor", "#fff");
+    r.style.setProperty("--buttonText", "#000");
+  };
+  const changeThemeToLight = () => {
+    var r = document.querySelector(":root");
+    r.style.setProperty("--mainBackground", "#fff");
+    r.style.setProperty("--secondaryBackground", "#eaeaea");
+    r.style.setProperty("--tertiaryBackground", "#f0ead6");
+    r.style.setProperty("--mainColor", "#eaeaea");
+    r.style.setProperty("--secondaryColor", "#fff");
+    r.style.setProperty("--borderColor", "#c1c1c1");
+    r.style.setProperty("--mainText", "#black");
+    r.style.setProperty("--secondaryText", "#4b5156");
+    r.style.setProperty("--themeDotBorder", "#24292e");
+    r.style.setProperty("--previewBg", "#fbf9f3cc");
+    r.style.setProperty("--previewShadow", "#f0ead6");
+    r.style.setProperty("--buttonColor", "#black");
+    r.style.setProperty("--buttonText", "#fff");
+  };
   return (
     <div className="hero">
       <div className="container">
@@ -38,6 +70,25 @@ export default function HeroSection() {
               src="/images/profile.jpg"
               alt="Gursharan Singh"
             />
+            <h4>Change Theme:</h4>
+            <div className="theme-options-wrapper">
+              <div className="theme-option">
+                <strong>Light:</strong>{" "}
+                <span
+                  className="theme-dot"
+                  id="light-mode"
+                  onClick={changeThemeToLight}
+                ></span>
+              </div>
+              <div className="theme-option">
+                <strong>Dark:</strong>{" "}
+                <span
+                  className="theme-dot"
+                  id="dark-mode"
+                  onClick={changeThemeToDark}
+                ></span>
+              </div>
+            </div>
           </div>
 
           <div className="right-column">
