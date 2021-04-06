@@ -9,10 +9,15 @@
     gap: 20px;
     justify-content: center;
     padding-bottom: 50px;
+    width: 100%;
     ul {
       padding-left: 10px;
       list-style-type: disc;
       font-weight: lighter;
+    }
+    @media (max-width: 400px) {
+      display: flex;
+      flex-direction: column;
     }
   }
 }
