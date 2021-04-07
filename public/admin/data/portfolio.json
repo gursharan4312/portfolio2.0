@@ -71,6 +71,26 @@
         "/assests/images/shehrvancouver3.png"
       ],
       "body": "Shehr Vancouver"
+    },
+    {
+      "projectName": "Portfolio !.0",
+      "projectDescription": "My first portfolio website built using React.js",
+      "github": "https://github.com/gursharan4312/portfolio_template_react",
+      "live": "https://portfolio-gursharan.netlify.app/",
+      "technologies": [
+        "React",
+        "Particle.Js",
+        "SaSS"
+      ],
+      "whatDidILearn": [
+        "Creating a awsome userinterface using React",
+        "Using npm libraries to perform different tasks"
+      ],
+      "projectImage": [
+        "/assests/images/portfolio1.jpg",
+        "/assests/images/portfolio1-light.jpg"
+      ],
+      "body": "Portfolio 1.0"
     }
   ]
 }
