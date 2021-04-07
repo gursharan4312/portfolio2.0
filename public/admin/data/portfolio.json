@@ -1,6 +1,27 @@
 {
   "projects": [
     {
+      "projectName": "JashanDeol",
+      "projectDescription": "Photography Portfolio built using React",
+      "github": "https://github.com/gursharan4312/jashandeol",
+      "live": "https://jashandeol.com/",
+      "technologies": [
+        "React",
+        "Netlify CMS",
+        "SaSS"
+      ],
+      "whatDidILearn": [
+        "Integrating Netlify CMS to React Project"
+      ],
+      "projectImage": [
+        "/assests/images/jashandeol1.png",
+        "/assests/images/jashandeol2.png",
+        "/assests/images/jashandeol3.png",
+        "/assests/images/jashandeol4.png"
+      ],
+      "body": "Jashandeol"
+    },
+    {
       "projectName": "Proshop Ecomm App",
       "projectDescription": "Full stack ecomm app built using MERN stack",
       "whatDidILearn": [
@@ -91,27 +112,6 @@
         "/assests/images/portfolio1-light.jpg"
       ],
       "body": "Portfolio 1.0"
-    },
-    {
-      "projectName": "JashanDeol",
-      "projectDescription": "Photography Portfolio built using React",
-      "github": "https://github.com/gursharan4312/jashandeol",
-      "live": "https://jashandeol.com/",
-      "technologies": [
-        "React",
-        "Netlify CMS",
-        "SaSS"
-      ],
-      "whatDidILearn": [
-        "Integrating Netlify CMS to React Project"
-      ],
-      "projectImage": [
-        "/assests/images/jashandeol1.png",
-        "/assests/images/jashandeol2.png",
-        "/assests/images/jashandeol3.png",
-        "/assests/images/jashandeol4.png"
-      ],
-      "body": "Jashandeol"
     }
   ]
 }
