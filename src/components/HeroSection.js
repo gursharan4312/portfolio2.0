@@ -31,7 +31,7 @@ export default function HeroSection() {
     r.style.setProperty("--themeDotBorder", "#24292e");
     r.style.setProperty("--previewBg", "#fbf9f3cc");
     r.style.setProperty("--previewShadow", "#f0ead6");
-    r.style.setProperty("--buttonColor", "#black");
+    r.style.setProperty("--buttonColor", "#000");
     r.style.setProperty("--buttonText", "#fff");
   };
   return (
@@ -73,20 +73,25 @@ export default function HeroSection() {
             <h4>Change Theme:</h4>
             <div className="theme-options-wrapper">
               <div className="theme-option">
-                <strong>Light:</strong>{" "}
+                {/* <strong>Light:</strong>{" "} */}
                 <span
                   className="theme-dot"
                   id="light-mode"
                   onClick={changeThemeToLight}
                 ></span>
-              </div>
-              <div className="theme-option">
-                <strong>Dark:</strong>{" "}
                 <span
                   className="theme-dot"
                   id="dark-mode"
                   onClick={changeThemeToDark}
                 ></span>
+              </div>
+              <div className="theme-option">
+                {/* <strong>Dark:</strong>{" "} */}
+                {/* <span
+                  className="theme-dot"
+                  id="dark-mode"
+                  onClick={changeThemeToDark}
+                ></span> */}
               </div>
             </div>
           </div>
