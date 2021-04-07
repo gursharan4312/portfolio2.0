@@ -49,6 +49,28 @@
         "/assests/images/realestate5.png"
       ],
       "body": "No details yet"
+    },
+    {
+      "projectName": "Shehr Vancouver ",
+      "projectDescription": "React Web App with AWS lambda functions as backend",
+      "github": "https://github.com/gursharan4312/shehrvancouver",
+      "live": "https://shehrvancouver.netlify.app/",
+      "technologies": [
+        "AWS Lambda Fns.",
+        "React",
+        "SaSS"
+      ],
+      "whatDidILearn": [
+        "Creating CURD API using Lambda functions",
+        "Creating custom components for Netlify CMS",
+        "Using Lambda functions with MongoDb to save content"
+      ],
+      "projectImage": [
+        "/assests/images/shehrvancouver1.png",
+        "/assests/images/shehrvancouver2.png",
+        "/assests/images/shehrvancouver3.png"
+      ],
+      "body": "Shehr Vancouver"
     }
   ]
 }
