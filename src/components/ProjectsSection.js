@@ -23,6 +23,19 @@ export default function ProjectsSection() {
     });
   }, []);
 
+  useEffect(() => {
+    var body = document.body;
+    if (openModal) {
+      body.style.position = "sticky";
+      body.style.height = "auto";
+      body.style.overflowY = "hidden";
+    } else {
+      body.style.position = "relative";
+      body.style.height = "auto";
+      body.style.overflowY = "auto";
+    }
+  }, [openModal]);
+
   return (
     <div className="projects-section" id="projects">
       <div className="container">
