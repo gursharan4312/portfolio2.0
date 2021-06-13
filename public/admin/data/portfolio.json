@@ -1,6 +1,60 @@
 {
   "projects": [
     {
+      "projectName": "Loving Sitters",
+      "github": "https://github.com/hatchways/team-cosmic-crisp",
+      "live": "https://lovingsitter.gursharansingh.ca/listings",
+      "technologies": [
+        "React",
+        "TypeScript",
+        "NodeJs",
+        "Material UI",
+        "Socket.io",
+        "Docker"
+      ],
+      "projectImage": [
+        "/assests/images/screenshot-2021-06-13-123624.jpg",
+        "/assests/images/screenshot-2021-06-13-123644.jpg",
+        "/assests/images/screenshot-2021-06-13-123657.jpg",
+        "/assests/images/screenshot-2021-06-13-123713.jpg",
+        "/assests/images/screenshot-2021-06-13-123728.jpg",
+        "/assests/images/screenshot-2021-06-13-123746.jpg",
+        "/assests/images/screenshot-2021-06-13-123911.jpg"
+      ],
+      "body": "\\#",
+      "whatDidILearn": [
+        "Using Material U",
+        "Using socket.io with messages and notifications ",
+        "Working in an Agile environment with Git Flow to collaborate with other team members to finish the project"
+      ],
+      "projectDescription": "Full Stack Web app built with MERN stack."
+    },
+    {
+      "projectName": "Real Estate Company",
+      "projectDescription": "A Homes listing web app for real estate company built using React",
+      "github": "https://github.com/gursharan4312/realEstateAgency",
+      "live": "https://realestate.gursharansingh.ca/",
+      "technologies": [
+        "React",
+        "Styled-components",
+        "NodeJs (Express)",
+        "MongoDb"
+      ],
+      "whatDidILearn": [
+        "Using Google Map API to list items in map",
+        "Using Google Geolocation API to fill addresses",
+        "Using Styled components for css in js and creating dark/light theme toggler"
+      ],
+      "projectImage": [
+        "/assests/images/realestate1.png",
+        "/assests/images/realestate2.png",
+        "/assests/images/realestate3.png",
+        "/assests/images/realestate4.png",
+        "/assests/images/realestate5.png"
+      ],
+      "body": "No details yet"
+    },
+    {
       "projectName": "JashanDeol",
       "projectDescription": "Photography Portfolio built using React",
       "github": "https://github.com/gursharan4312/jashandeol",
@@ -45,31 +99,6 @@
       ],
       "github": "https://github.com/gursharan4312/proshop",
       "live": "https://proshop.gursharansingh.ca/"
-    },
-    {
-      "projectName": "Real Estate Company",
-      "projectDescription": "A Homes listing web app for real estate company built using React",
-      "github": "https://github.com/gursharan4312/realEstateAgency",
-      "live": "https://realestate.gursharansingh.ca/",
-      "technologies": [
-        "React",
-        "Styled-components",
-        "NodeJs (Express)",
-        "MongoDb"
-      ],
-      "whatDidILearn": [
-        "Using Google Map API to list items in map",
-        "Using Google Geolocation API to fill addresses",
-        "Using Styled components for css in js and creating dark/light theme toggler"
-      ],
-      "projectImage": [
-        "/assests/images/realestate1.png",
-        "/assests/images/realestate2.png",
-        "/assests/images/realestate3.png",
-        "/assests/images/realestate4.png",
-        "/assests/images/realestate5.png"
-      ],
-      "body": "No details yet"
     },
     {
       "projectName": "Shehr Vancouver ",
