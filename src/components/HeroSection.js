@@ -53,7 +53,7 @@ export default function HeroSection() {
 
             <ul id="navigation">
               <li>
-                <a href="/resume.pdf">Resume</a>
+                <a href="/final resume.pdf">Resume</a>
               </li>
               <li>
                 <a href="#projects">Projects</a>
