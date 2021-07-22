@@ -44,7 +44,7 @@ export default function AboutSection() {
             <h4>TOP EXPERTISE</h4>
             <p>
               Fullstack developer with primary focus on Node(Express) + React:{" "}
-              <a target="_blank" href="resume.pdf" rel="noopener noreferrer">
+              <a target="_blank" href="/final resume.pdf" rel="noopener noreferrer">
                 Download Resume
               </a>
             </p>
