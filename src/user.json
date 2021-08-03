@@ -1,7 +1,7 @@
 {
     "name":"Gursharan Singh",
     "imageUrl":"/images/profile.jpg",
-    "whatIdo":"I design and build wesbites",
+    "whatIdo":"I design and build websites",
     "aboutMe":"I always had passion for coding. I enjoy doing both frontend and backend of a website.I am always looking for opportunities to push my boundaries and build new and exciting things.Recently I'm more focused on MERN stack and created some awsome projects with it.",
     "topExperties":"Fullstack developer with primary focus on Node(Express) + React",
     "skills":["JavaScript(ES6)","Java","React","Redux","Node","AWS(EC2/S3/Lambda)","HTML5/CSS3","SQL(MySQL)","MongoDB","Nginx","Docker","Git","WebAPI","and more..."],
