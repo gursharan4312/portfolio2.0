@@ -102,7 +102,7 @@ export default function HeroSection() {
                 <div id="corner-tl" className="corner"></div>
                 <div id="corner-tr" className="corner"></div>
                 <h3>What I Do</h3>
-                <p>I design and build wesbites</p>
+                <p>I design and build websites</p>
                 <div id="corner-br" className="corner"></div>
                 <div id="corner-bl" className="corner"></div>
               </div>
