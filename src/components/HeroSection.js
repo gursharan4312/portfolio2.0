@@ -1,8 +1,9 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./css/heroSection.scss";
 
 export default function HeroSection() {
   const changeThemeToDark = () => {
+    localStorage.setItem("theme",'dark');
     var r = document.querySelector(":root");
     r.style.setProperty("--mainBackground", "#111");
     r.style.setProperty("--secondaryBackground", "#1e1e1e");
@@ -19,6 +20,7 @@ export default function HeroSection() {
     r.style.setProperty("--buttonText", "#000");
   };
   const changeThemeToLight = () => {
+    localStorage.setItem("theme",'default');
     var r = document.querySelector(":root");
     r.style.setProperty("--mainBackground", "#fff");
     r.style.setProperty("--secondaryBackground", "#eaeaea");
@@ -34,6 +36,16 @@ export default function HeroSection() {
     r.style.setProperty("--buttonColor", "#000");
     r.style.setProperty("--buttonText", "#fff");
   };
+  
+  useEffect(()=>{
+    const theme = localStorage.getItem("theme");
+    if(!theme){
+      localStorage.setItem("theme",'default');
+    }else if(theme==='dark'){
+      changeThemeToDark();
+    }
+  },[]);
+
   return (
     <div className="hero">
       <div className="container">
